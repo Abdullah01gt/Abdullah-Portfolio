@@ -40,7 +40,9 @@ export default function Portfolio() {
         'Integrated Razorpay Payment Gateway for real-time secure online transactions.',
         'Connected Cloudinary API for optimized image uploads and cloud asset delivery.'
       ],
-      tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Razorpay', 'Cloudinary']
+      tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Razorpay', 'Cloudinary'],
+      githubLink: "https://github.com/Abdullah01gt/Vehicle-Rental-System-Frontend",
+      liveLink: "https://quick-drive-rentals.netlify.app/login"
     },
     {
       title: 'Dynamic Invoice Generator',
@@ -52,7 +54,9 @@ export default function Portfolio() {
         'Integrated React-PDF Renderer for one-click high-fidelity PDF invoice exports.',
         'Built responsive live-preview interface with client-side state caching.'
       ],
-      tech: ['React.js', 'React-PDF Renderer', 'Tailwind CSS', 'JavaScript']
+      tech: ['React.js', 'React-PDF Renderer', 'Tailwind CSS', 'JavaScript'],
+      githubLink: "https://github.com/Abdullah01gt/Invoice-Builder-App",
+      liveLink: "https://invoice-builder-app-abd.netlify.app/"
     }
   ];
 
@@ -277,7 +281,13 @@ export default function Portfolio() {
                       <span className="text-indigo-400 mt-1">•</span>
                       <span>{point}</span>
                     </div>
+
+                    
                   ))}
+                </div>
+                <div className="space-y-1 mb-2">
+                  <p className="text-sm text-slate-300 "> Deploy URL : <a href={project.liveLink} className="cursor-pointer hover:text-violet-400">{project.liveLink}</a></p>
+                  <p className="text-sm text-slate-300 "> Github URL : <a href={project.githubLink} className="cursor-pointer hover:text-violet-400"> {project.githubLink}</a></p>
                 </div>
               </div>
 
