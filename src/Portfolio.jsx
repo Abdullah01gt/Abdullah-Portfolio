@@ -57,7 +57,21 @@ export default function Portfolio() {
       tech: ['React.js', 'React-PDF Renderer', 'Tailwind CSS', 'JavaScript'],
       githubLink: "https://github.com/Abdullah01gt/Invoice-Builder-App",
       liveLink: "https://invoice-builder-app-abd.netlify.app/"
-    }
+    },
+    {
+  title: 'Smart Expense Tracker',
+  badge: 'Frontend / Analytics',
+  description:
+    'An interactive personal finance application designed to track expenses, manage budgets, and visualize spending habits through dynamic data charts.',
+  highlights: [
+    'Engineered intuitive transaction logging with category filtering, date tagging, and budget limits.',
+    'Integrated React-Chartjs-2 for real-time visual breakdown of spending trends and financial analytics.',
+    'Implemented persistent client-side state management using LocalStorage for offline data retention.'
+  ],
+  tech: ['React.js', 'Chart.js', 'React-Chartjs-2', 'Tailwind CSS', 'LocalStorage'],
+  githubLink: 'https://github.com/Abdullah01gt/Smart-expense-tracker',
+  liveLink: 'https://smart-expense-tracker-abd.netlify.app/'
+}
   ];
 
   const experience = [
