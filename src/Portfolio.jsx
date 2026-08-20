@@ -95,21 +95,21 @@ export default function Portfolio() {
       degree: 'B.E. Computer Science and Engineering',
       institution: 'Mohamed Sathak Engineering College, Kilakarai',
       period: '2021 – 2025',
-      detail: 'CGPA: 7.78 / 10'
+      
     },
     {
       degree: 'Higher Secondary Education (HSC & SSLC)',
       institution: 'Mohamed Sathak Dastagir Matric Hr Sec School, Ramanathapuram',
       period: '2020',
-      detail: 'HSC (12th): 70% | SSLC (10th): 83.2%'
+      
     }
   ];
 
   const certifications = [
-    { title: 'AI-Integrated Full Stack Development', issuer: 'IIT-M & HCL GUVI' },
-    { title: 'MERN Stack Web Development Bootcamp', issuer: 'Dr. Angela Yu (Udemy)' },
-    { title: 'Git & GitHub Masterclass', issuer: 'Academind (Udemy)' },
-    { title: 'Complete Python Programming Masterclass', issuer: 'Jose Portilla (Udemy)' }
+    { title: 'AI-Integrated Full Stack Development', issuer: 'IIT-M & HCL GUVI', link:"https://drive.google.com/file/d/1axC2IcLUcljnITd6727MzCymg7i2DVA1/view?usp=sharing" },
+    { title: 'MERN Stack Web Development Bootcamp', issuer: 'Dr. Angela Yu (Udemy)', link:"https://drive.google.com/file/d/1Q6XcuBTFDAqwl6NmZjb13tkXnn7jdzmW/view?usp=sharing" },
+    { title: 'Git & GitHub Masterclass', issuer: 'Academind (Udemy)', link:"https://drive.google.com/file/d/1lpsT5h8K7-wwQeHdXmAWFAxI_hHYhOcP/view?usp=sharing" },
+    { title: 'Complete Python Programming Masterclass', issuer: 'Jose Portilla (Udemy)', link:"https://drive.google.com/file/d/15yxwcVHxwRpLBadolhF0IVqB0S4_dUk8/view?usp=sharing" }
   ];
 
   return (
@@ -184,12 +184,21 @@ export default function Portfolio() {
 
         {/* CTA Buttons */}
         <div className="flex flex-wrap items-center gap-4">
-          <a
+
+           <a
+            href="https://drive.google.com/file/d/1s5C9DIBxcb9VdWQOlbhUVntpf-jhtGh8/view?usp=sharing"
+            className="px-6 py-3 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-medium transition shadow-lg shadow-indigo-600/30 flex items-center gap-2"
+          >
+            📄 Resume
+          </a>
+           
+           <a
             href="#contact"
             className="px-6 py-3 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-medium transition shadow-lg shadow-indigo-600/30 flex items-center gap-2"
           >
             <Mail size={18} /> Get In Touch
           </a>
+         
           <a
             href="#projects"
             className="px-6 py-3 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 font-medium transition border border-slate-700 flex items-center gap-2"
@@ -286,8 +295,8 @@ export default function Portfolio() {
                   ))}
                 </div>
                 <div className="space-y-1 mb-2">
-                  <p className="text-sm text-slate-300 "> Deploy URL : <a href={project.liveLink} className="cursor-pointer hover:text-violet-400">{project.liveLink}</a></p>
-                  <p className="text-sm text-slate-300 "> Github URL : <a href={project.githubLink} className="cursor-pointer hover:text-violet-400"> {project.githubLink}</a></p>
+                  <p className="text-sm text-slate-300 "> Deploy URL : <a href={project.liveLink} className="cursor-pointer hover:text-violet-400">Click Here</a></p>
+                  <p className="text-sm text-slate-300 "> Github URL : <a href={project.githubLink} className="cursor-pointer hover:text-violet-400"> Click Here</a></p>
                 </div>
               </div>
 
@@ -358,7 +367,7 @@ export default function Portfolio() {
                   <span className="text-xs font-mono text-indigo-400">{edu.period}</span>
                   <h4 className="text-lg font-bold text-white mt-1">{edu.degree}</h4>
                   <p className="text-sm text-slate-300 mt-1">{edu.institution}</p>
-                  <p className="text-xs font-medium text-emerald-400 mt-2">{edu.detail}</p>
+                 { edu.detail && <p className="text-xs font-medium text-emerald-400 mt-2">{edu.detail}</p>}
                 </div>
               ))}
             </div>
@@ -376,6 +385,8 @@ export default function Portfolio() {
                   <div>
                     <h4 className="text-base font-semibold text-white">{cert.title}</h4>
                     <p className="text-xs text-slate-400 mt-1">{cert.issuer}</p>
+                    <p className="text-xs text-slate-400 mt-1">Certificate Link: <a href={cert.link} className="cursor-pointer hover:text-violet-400"> Click Here</a></p>
+                     
                   </div>
                   <Award className="text-slate-700" size={20} />
                 </div>
