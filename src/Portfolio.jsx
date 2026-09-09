@@ -45,6 +45,20 @@ export default function Portfolio() {
       liveLink: "https://quick-drive-rentals.netlify.app/login"
     },
     {
+  title: 'ApexLearn E-Learning Platform',
+  badge: 'Full Stack / MERN',
+  description:
+    'A dual-portal technical education platform designed for learners to master engineering skills and instructors to manage course curricula.',
+  highlights: [
+    'Architected role-based access control (RBAC) with secure httpOnly JWT cookies to mitigate XSS and CSRF risks.',
+    'Engineered cross-domain session hydration to maintain seamless user authentication across client page reloads.',
+    'Optimized state hydration and global UI updates using Context API / Redux, preventing unnecessary component re-renders. '
+  ],
+  tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'JWT', 'Tailwind CSS'],
+  githubLink: "https://github.com/Abdullah01gt/Online-Learning-Platform-front-end",
+  liveLink: "https://apexlearn-online-learning-platform.netlify.app"
+},
+    {
       title: 'Dynamic Invoice Generator',
       badge: 'Frontend / Tooling',
       description:
@@ -71,7 +85,8 @@ export default function Portfolio() {
   tech: ['React.js', 'Chart.js', 'React-Chartjs-2', 'Tailwind CSS', 'LocalStorage'],
   githubLink: 'https://github.com/Abdullah01gt/Smart-expense-tracker',
   liveLink: 'https://smart-expense-tracker-abd.netlify.app/'
-}
+},
+
   ];
 
   const experience = [
@@ -110,13 +125,8 @@ export default function Portfolio() {
       institution: 'Mohamed Sathak Engineering College, Kilakarai',
       period: '2021 – 2025',
       
-    },
-    {
-      degree: 'Higher Secondary Education (HSC & SSLC)',
-      institution: 'Mohamed Sathak Dastagir Matric Hr Sec School, Ramanathapuram',
-      period: '2020',
-      
     }
+
   ];
 
   const certifications = [
@@ -200,7 +210,7 @@ export default function Portfolio() {
         <div className="flex flex-wrap items-center gap-4">
 
            <a
-            href="https://drive.google.com/file/d/1s5C9DIBxcb9VdWQOlbhUVntpf-jhtGh8/view?usp=sharing"
+            href="https://drive.google.com/file/d/1Ed7AoTR684IINrIcSWdKby0jKOJxoD-V/view?usp=sharing"
             className="px-6 py-3 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-medium transition shadow-lg shadow-indigo-600/30 flex items-center gap-2"
           >
             📄 Resume
@@ -225,7 +235,7 @@ export default function Portfolio() {
         <div className="mt-12 pt-8 border-t border-slate-800 w-full grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm text-slate-400">
           <div className="flex items-center gap-3">
             <Mail className="text-indigo-400" size={18} />
-            <a href="mailto:abdexe25@gmail.com" className="hover:text-white transition">abdexe25@gmail.com</a>
+            <a href="mailto:abdexe25@gmail.com" className="hover:text-white transition">abdullah01gt@gmail.com</a>
           </div>
           <div className="flex items-center gap-3">
             <Phone className="text-indigo-400" size={18} />
@@ -309,8 +319,8 @@ export default function Portfolio() {
                   ))}
                 </div>
                 <div className="space-y-1 mb-2">
-                  <p className="text-sm text-slate-300 "> Deploy URL : <a href={project.liveLink} className="cursor-pointer hover:text-violet-400">Click Here</a></p>
-                  <p className="text-sm text-slate-300 "> Github URL : <a href={project.githubLink} className="cursor-pointer hover:text-violet-400"> Click Here</a></p>
+                  <p className="text-l text-white "> Live URL : <a href={project.liveLink} target="_blank" rel="noopener noreferrer" className="cursor-pointer hover:text-violet-400">Click Here</a></p>
+                  <p className="text-l text-white "> Github URL : <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="cursor-pointer hover:text-violet-400"> Click Here</a></p>
                 </div>
               </div>
 
@@ -399,7 +409,7 @@ export default function Portfolio() {
                   <div>
                     <h4 className="text-base font-semibold text-white">{cert.title}</h4>
                     <p className="text-xs text-slate-400 mt-1">{cert.issuer}</p>
-                    <p className="text-xs text-slate-400 mt-1">Certificate Link: <a href={cert.link} className="cursor-pointer hover:text-violet-400"> Click Here</a></p>
+                    <p className="text-sm text-white mt-1">Certificate Link: <a href={cert.link} className="cursor-pointer hover:text-violet-400" target="_blank" rel="noopener noreferrer"> Click Here</a></p>
                      
                   </div>
                   <Award className="text-slate-700" size={20} />
@@ -425,7 +435,7 @@ export default function Portfolio() {
               href="mailto:abdexe25@gmail.com"
               className="px-6 py-3 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-medium transition shadow-lg shadow-indigo-600/30 flex items-center gap-2"
             >
-              <Mail size={18} /> abdexe25@gmail.com
+              <Mail size={18} /> abdullah01gt@gmail.com
             </a>
             <a
               href="tel:+917538858217"
