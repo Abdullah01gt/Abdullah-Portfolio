@@ -11,10 +11,13 @@ import {
   Briefcase, 
   GraduationCap, 
   Award, 
+  ContactRound,
+  GitFork,
   ChevronRight,
   Menu,
   X
 } from 'lucide-react';
+
 
 
 
@@ -59,6 +62,20 @@ export default function Portfolio() {
   liveLink: "https://apexlearn-online-learning-platform.netlify.app"
 },
     {
+      title: 'Realtime Chat Application',
+      badge: 'Full Stack / MERN',
+      description:
+        'A full-stack realtime messaging platform with instant one-on-one conversations, media sharing, and secure authentication, containerized for production deployment.',
+      highlights: [
+        'Engineered realtime bidirectional messaging using Socket.io with live socket-to-user mapping for instant delivery.',
+        'Integrated Clerk for secure authentication with webhook-driven user sync and protected API routes.',
+        'Connected ImageKit for optimized media uploads and implemented a multi-stage Dockerized build for deployment.'
+      ],
+      tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Socket.io', 'Clerk', 'ImageKit', 'Zustand', 'Docker'],
+      githubLink: "https://github.com/Abdullah01gt/Chat_App",
+      liveLink: "https://chat-app-2n8b.onrender.com"
+    },
+    {
       title: 'Dynamic Invoice Generator',
       badge: 'Frontend / Tooling',
       description:
@@ -86,7 +103,7 @@ export default function Portfolio() {
   githubLink: 'https://github.com/Abdullah01gt/Smart-expense-tracker',
   liveLink: 'https://smart-expense-tracker-abd.netlify.app/'
 },
-
+ 
   ];
 
   const experience = [
@@ -235,15 +252,23 @@ export default function Portfolio() {
         <div className="mt-12 pt-8 border-t border-slate-800 w-full grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm text-slate-400">
           <div className="flex items-center gap-3">
             <Mail className="text-indigo-400" size={18} />
-            <a href="mailto:abdexe25@gmail.com" className="hover:text-white transition">abdullah01gt@gmail.com</a>
+            <a href="mailto:abdexe25@gmail.com" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">abdullah01gt@gmail.com</a>
           </div>
           <div className="flex items-center gap-3">
             <Phone className="text-indigo-400" size={18} />
-            <a href="tel:+917538858217" className="hover:text-white transition">+91 7538858217</a>
+            <a href="tel:+917538858217" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">+91 7538858217</a>
           </div>
           <div className="flex items-center gap-3">
             <MapPin className="text-indigo-400" size={18} />
             <span>Ramanathapuram, Tamil Nadu</span>
+          </div>
+          <div className="flex items-center gap-3">
+            <GitFork className="text-indigo-400" size={18} />
+            <a href="https://github.com/Abdullah01gt" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">GitHub</a>
+          </div>
+          <div className="flex items-center gap-3">
+            <ContactRound className="text-indigo-400" size={18} />
+            <a href="https://www.linkedin.com/in/abdullahwebdev" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">LinkedIn</a>
           </div>
         </div>
       </section>
