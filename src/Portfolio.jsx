@@ -228,7 +228,7 @@ export default function Portfolio() {
         <div className="flex flex-wrap items-center gap-4">
 
            <a
-            href="https://drive.google.com/file/d/1Ed7AoTR684IINrIcSWdKby0jKOJxoD-V/view?usp=sharing"
+            href="https://drive.google.com/file/d/181Xpu-d9juuvlgPp1dduJ40YOBApbobf/view?usp=sharing"
             className="px-6 py-3 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-medium transition shadow-lg shadow-indigo-600/30 flex items-center gap-2"
           >
             📄 Resume
