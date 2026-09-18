@@ -17,6 +17,7 @@ import {
   Menu,
   X
 } from 'lucide-react';
+import Contact from './Contact';
 
 
 
@@ -446,6 +447,8 @@ export default function Portfolio() {
         </div>
       </section>
 
+     
+
       {/* Contact Section */}
       <section id="contact" className="py-20 bg-slate-900/60 border-t border-slate-800">
         <div className="max-w-4xl mx-auto px-6 text-center">
@@ -470,6 +473,7 @@ export default function Portfolio() {
             </a>
           </div>
         </div>
+         <Contact/>
       </section>
 
       {/* Footer */}
